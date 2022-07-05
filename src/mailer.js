@@ -2,8 +2,8 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 
 
-const GMAIL_USER = "";
-const GMAIL_PASSWORD = "";
+const GMAIL_USER = process.env.GMAIL_USER;
+const GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;
 
 /**
  * Sends html email using nodemailer
