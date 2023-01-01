@@ -8,7 +8,7 @@ router.post('/', async function (req, res) {
     const contact_details = req.body;
 
     if (contact_details.name && contact_details.email && contact_details.message) {
-        ejs.renderFile(path.join(__dirname, '../views/contact.ejs'), contact_details,  function (err, html) {
+        ejs.renderFile(path.join(__dirname, 'views/contact.ejs'), contact_details,  function (err, html) {
             if (err) {
                 console.log(err);
                 res.status(500).send('Internal Server Error');
