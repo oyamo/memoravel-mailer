@@ -16,10 +16,11 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
+app.use(cors({
+  origin: 'https://www.memoraveltravel.com'
+}));
 app.use(logger('dev'));
 app.use(express.json());
-app.use(cors());
 app.use((req, res, next) => {
   res.header({"Access-Control-Allow-Origin": "*"});
   next();
