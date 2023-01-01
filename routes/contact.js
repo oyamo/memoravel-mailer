@@ -15,7 +15,7 @@ router.post('/' ,function(req, res){
            } else {
                await sendMail({
                    from: 'Memoravel Notifications',
-                   to: 'memoraveltravel@gmail.com',
+                   to: 'oyamobrian8@gmail.com',
                    subject: 'New Message',
                    text: html
                })
