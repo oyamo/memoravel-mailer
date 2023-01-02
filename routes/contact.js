@@ -4,7 +4,7 @@ const path = require('path');
 const sendMail = require('../src/mailer');
 var router = express.Router();
 
-router.post('/',  function (req, res) {
+router.post('do/',  function (req, res) {
     const contact_details = req.body;
 
     if (contact_details.name && contact_details.email && contact_details.message) {
